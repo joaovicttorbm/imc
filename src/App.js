@@ -2,8 +2,8 @@ import "./App.css";
 import {useState} from 'react'
 function App() {
   
-  const [peso, setPeso] = useState(0);
-  const [altura, setAltura] = useState(0);
+  const [peso, setPeso] = useState("");
+  const [altura, setAltura] = useState("");
   const [result, setResult] = useState(0);
 
   function validarPeso(e) {
