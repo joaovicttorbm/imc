@@ -1,0 +1,49 @@
+/* Definindo a cor de fundo da página */
+body {
+    background-color: #000000;
+  }
+
+  div {
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  
+  h1 {
+    color: #ccc;
+    font-size: 2em;
+  }
+
+  label {
+    color: #ccc;
+    margin: 5px;
+  }
+  
+  
+  input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  
+  button {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    margin: 20px auto;
+    
+  }
+
+  span {
+    color: #ccc;
+    display: block;
+  }
+  
+  
