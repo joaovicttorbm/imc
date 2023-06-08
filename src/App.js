@@ -29,23 +29,22 @@ function App() {
   };
 
   function categoriaImc(){
-    if (result < 16.00) {
-    return "Baixo peso Grau III";
-  } else if (result < 17.00) {
-    return "Baixo peso Grau II";
-  } else if (result < 18.50) {
-    return "Baixo peso Grau I";
-  } else if (result < 25.00) {
-    return "Peso ideal";
-  } else if (result < 30.00) {
-    return "Sobrepeso";
-  } else if (result < 35.00) {
-    return "Obesidade Grau I";
-  } else if (result < 40.00) {
-    return "Obesidade Grau II";
-  } else {
-    return "Obesidade Grau III";
-  }
+    const classificacoesIMC = [
+      { limite: 16.00, classificacao: "Baixo peso Grau III" },
+      { limite: 17.00, classificacao: "Baixo peso Grau II" },
+      { limite: 18.50, classificacao: "Baixo peso Grau I" },
+      { limite: 25.00, classificacao: "Peso ideal" },
+      { limite: 30.00, classificacao: "Sobrepeso" },
+      { limite: 35.00, classificacao: "Obesidade Grau I" },
+      { limite: 40.00, classificacao: "Obesidade Grau II" },
+      { limite: Infinity, classificacao: "Obesidade Grau III" }
+    ];
+  for (let i = 0; i < classificacoesIMC.length; i++) {
+      if (result < classificacoesIMC[i].limite) {
+        console.log(classificacoesIMC[i].classificacao);
+        return classificacoesIMC[i].classificacao;
+      }
+    }
   }
   
 
